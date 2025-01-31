@@ -1,7 +1,7 @@
 import cv2
 
 # Load our image
-img = cv2.imread("image.jpg")
+img = cv2.imread("conference.jpg")
 
 # Initialize the face detector using the YuNet model
 detector = cv2.FaceDetectorYN.create("face_detection_yunet_2023mar.onnx", "", (300,300))
@@ -22,7 +22,7 @@ if detections is not None:
         # Extract face bounding box coordinates
         top_x, top_y, width, height = output[:4]
 
-         # Extract facial landmark coordinates (fun stuff!)
+        # Extract facial landmark coordinates (fun stuff!)
         right_eye_x, right_eye_y = output[4:6]
         left_eye_x, left_eye_y = output[6:8]
         nose_tip_x, nose_tip_y = output[8:10]
