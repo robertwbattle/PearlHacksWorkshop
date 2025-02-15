@@ -1,7 +1,7 @@
 import cv2
 
 # Initialize the face detector with the YuNet model
-detector = cv2.FaceDetectorYN.create("face_detection_yunet_2023mar.onnx", "", (300, 300))
+detector = cv2.FaceDetectorYN.create("model.onnx", "", (300, 300))
 
 # Set up video capture from the MP4 file (or other compatible formats)
 video_path = "kennedy.mp4"

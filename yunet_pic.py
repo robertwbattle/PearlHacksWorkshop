@@ -4,7 +4,7 @@ import cv2
 img = cv2.imread("conference.jpg")
 
 # Initialize the face detector using the YuNet model
-detector = cv2.FaceDetectorYN.create("face_detection_yunet_2023mar.onnx", "", (300,300))
+detector = cv2.FaceDetectorYN.create("model.onnx", "", (300,300))
 
 # Set the input image size for the detector
 img_h, img_w, _ = img.shape

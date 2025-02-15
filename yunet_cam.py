@@ -1,7 +1,7 @@
 import cv2
 
 # Initialize the face detector with the YuNet model
-detector = cv2.FaceDetectorYN.create("face_detection_yunet_2023mar.onnx", "", (300, 300))
+detector = cv2.FaceDetectorYN.create("model.onnx", "", (300, 300))
 
 # Set up video capture from camera (index 1) (or index 0, you may have to try both)
 cv2.namedWindow("cam")
